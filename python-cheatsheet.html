@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://barry-williams.github.io/python-cheatsheet/ -->
+<html lang="en-US" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>About | python-cheatsheet</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="About">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook)">
+<meta property="og:description" content="Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook)">
+<link rel="canonical" href="https://barry-williams.github.io/python-cheatsheet/">
+<meta property="og:url" content="https://barry-williams.github.io/python-cheatsheet/">
+<meta property="og:site_name" content="python-cheatsheet">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="About">
+<script type="application/ld+json">
+{"description":"Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook)","url":"https://barry-williams.github.io/python-cheatsheet/","@type":"WebSite","headline":"About","name":"python-cheatsheet","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="./About _ python-cheatsheet_files/style.css">
+    <script src="./About _ python-cheatsheet_files/jquery-1.12.4.min.js.download" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./About _ python-cheatsheet_files/respond.js.download"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/python-cheatsheet/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/python-cheatsheet/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="">
+
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="#about">About</a>
+        <ul>
+          <li><a href="#contribute">Contribute</a></li>
+          <li><a href="#read-it">Read It</a></li>
+          <li><a href="#python-cheatsheet">Python Cheatsheet</a></li>
+          <li><a href="#python-basics">Python Basics</a>
+            <ul>
+              <li><a href="#math-operators">Math Operators</a></li>
+              <li><a href="#data-types">Data Types</a></li>
+              <li><a href="#string-concatenation-and-replication">String Concatenation and Replication</a></li>
+              <li><a href="#variables">Variables</a></li>
+              <li><a href="#comments">Comments</a></li>
+              <li><a href="#the-print-function">The print() Function</a></li>
+              <li><a href="#the-input-function">The input() Function</a></li>
+              <li><a href="#the-len-function">The len() Function</a></li>
+              <li><a href="#the-str-int-and-float-functions">The str(), int(), and float() Functions</a></li>
+            </ul>
+          </li>
+          <li><a href="#flow-control">Flow Control</a>
+            <ul>
+              <li><a href="#comparison-operators">Comparison Operators</a></li>
+              <li><a href="#boolean-evaluation">Boolean evaluation</a></li>
+              <li><a href="#boolean-operators">Boolean Operators</a></li>
+              <li><a href="#mixing-boolean-and-comparison-operators">Mixing Boolean and Comparison Operators</a></li>
+              <li><a href="#indentation-and-code-blocks">indentation and code blocks (:)</a></li>
+              <li><a href="#if-statements">if Statements</a></li>
+              <li><a href="#else-statements">else Statements</a></li>
+              <li><a href="#elif-statements">elif Statements</a></li>
+              <li><a href="#while-loop-statements">while Loop Statements</a></li>
+              <li><a href="#break-statements">break Statements</a></li>
+              <li><a href="#continue-statements">continue Statements</a></li>
+              <li><a href="#for-loops-and-the-range-function">for Loops and the range() Function</a></li>
+              <li><a href="#for-else-statement">For else statement</a></li>
+              <li><a href="#importing-modules">Importing Modules</a></li>
+              <li><a href="#ending-a-program-early-with-sysexit">Ending a Program Early with sys.exit()</a></li>
+            </ul>
+          </li>
+          <li><a href="#functions">Functions</a>
+            <ul>
+              <li><a href="#return-values-and-return-statements">Return Values and return Statements</a></li>
+              <li><a href="#the-none-value">The None Value</a></li>
+              <li><a href="#keyword-arguments-and-print">Keyword Arguments and print()</a></li>
+              <li><a href="#local-and-global-scope">Local and Global Scope</a></li>
+              <li><a href="#the-global-statement">The global Statement</a></li>
+            </ul>
+          </li>
+          <li><a href="#exception-handling">Exception Handling</a>
+            <ul>
+              <li><a href="#basic-exception-handling">Basic exception handling</a></li>
+              <li><a href="#final-code-in-exception-handling">Final code in exception handling</a></li>
+            </ul>
+          </li>
+          <li><a href="#lists">Lists</a>
+            <ul>
+              <li><a href="#getting-individual-values-in-a-list-with-indexes">Getting Individual Values in a List with Indexes</a></li>
+              <li><a href="#negative-indexes">Negative Indexes</a></li>
+              <li><a href="#getting-sublists-with-slices">Getting Sublists with Slices</a></li>
+              <li><a href="#getting-a-lists-length-with-len">Getting a List’s Length with len()</a></li>
+              <li><a href="#changing-values-in-a-list-with-indexes">Changing Values in a List with Indexes</a></li>
+              <li><a href="#list-concatenation-and-list-replication">List Concatenation and List Replication</a></li>
+              <li><a href="#removing-values-from-lists-with-del-statements">Removing Values from Lists with del Statements</a></li>
+              <li><a href="#using-for-loops-with-lists">Using for Loops with Lists</a></li>
+              <li><a href="#the-in-and-not-in-operators">The in and not in Operators</a></li>
+              <li><a href="#augmented-assignment-operators">Augmented Assignment Operators</a></li>
+              <li><a href="#finding-a-value-in-a-list-with-the-index-method">Finding a Value in a List with the index() Method</a></li>
+              <li><a href="#adding-values-to-lists-with-the-append-and-insert-methods">Adding Values to Lists with the append() and insert() Methods</a></li>
+              <li><a href="#removing-values-from-lists-with-remove">Removing Values from Lists with remove()</a></li>
+              <li><a href="#removing-values-from-lists-with-pop">Removing Values from Lists with pop()</a></li>
+              <li><a href="#indexing-and-slicing-strings">Indexing and Slicing Strings</a></li>
+              <li><a href="#the-in-and-not-in-operators-with-strings">The in and not in Operators with Strings</a></li>
+              <li><a href="#the-in-and-not-in-operators-with-list">The in and not in Operators with list</a></li>
+              <li><a href="#the-upper-lower-isupper-and-islower-string-methods">The upper(), lower(), isupper(), and islower() String Methods</a>\</li>
+              <li><a href="#formatted-string-literals-or-f-strings-python-36">Formatted String Literals or f-strings (Python 3.6+)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>python-cheatsheet</h1>
+          <p>Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook)</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Barry-Williams">Barry-Williams</a></span>
+          <span class="credits right">Hosted on GitHub Pages — Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+        <h1 id="about">About</h1>
+
+<p>Basic cheatsheet for Python mostly based on the book written by Al Sweigart, <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons license</a> and many other sources. I have modified this to remove what you do not need to know.</p>
+
+<h2 id="read-it">Read It</h2>
+
+<ul>
+  <li><a href="https://www.pythoncheatsheet.org/">Website with full cheat sheet</a></li>
+</ul>
+
+<h2 id="python-cheatsheet">Python Cheatsheet</h2>
+
+
+
+<h2 id="python-basics">Python Basics</h2>
+
+<h3 id="symbols-and-terminology">Symbols and terminology</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>symbol</th>
+      <th>Name</th>
+      <th>symbol</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>‘</td>
+      <td>Single Quote</td>
+      <td>\</td>
+      <td>Backslash</td>
+    </tr>
+    <tr>
+      <td>“</td>
+      <td>Double Quote</td>
+      <td>&gt;</td>
+      <td>Greater</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Exclamation</td>
+      <td>&lt;</td>
+      <td>Less</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Hash</td>
+      <td>:</td>
+      <td>Colon</td>
+    </tr>
+    <tr>
+      <td>()</td>
+      <td>Parentheses</td>
+      <td>;</td>
+      <td>Semi Colon</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Asterisk</td>
+      <td>.</td>
+      <td>Dot</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Slash</td>
+      <td>,</td>
+      <td>Comma</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Parentheses</strong> () are used to assign code including strings, numbers, variables etc to a particular function</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"this string belongs to the print function"</span><span class="p">)</span>
+<span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"this string belongs to the input function, the input function belongs to the int function"</span><span class="p">))</span> 
+<span class="c1"># notice the 2 closing parenthesis                                                                   ^
+</span></code></pre></div></div>
+<p><strong>quotation marks</strong> “” or ‘’ are used to enclose strings either double or single quotation marks can be used so long as the same are used on either side</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'I can use single or double quotes'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"I'm going to use double quotes here because the single is used as an apostrophe')
+</span></code></pre></div></div>
+<p><strong>comma</strong> , is used to seperate arguments to a function</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+<p>The range function can take one, two or, three arguements
+<strong>white space</strong>
+For the most part spaces in your code do not matter you will notice above in the range command the first command had no space between range the parenthesis but the rest do
+There are only a few occasions it really matters if you include a space in your code or not and I will cover when that is the case</p>
+
+<h3 id="math-operators">Math Operators</h3>
+
+<p>From <strong>Highest</strong> to <strong>Lowest</strong> precedence:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operators</th>
+      <th>Operation</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/</td>
+      <td>Division</td>
+      <td><code class="language-plaintext highlighter-rouge">22 / 8 = 2.75</code></td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+      <td><code class="language-plaintext highlighter-rouge">3 * 3 = 9</code></td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Subtraction</td>
+      <td><code class="language-plaintext highlighter-rouge">5 - 2 = 3</code></td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Addition</td>
+      <td><code class="language-plaintext highlighter-rouge">2 + 2 = 4</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Examples of expressions in the interactive shell:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">6</span>
+<span class="mi">20</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span>
+<span class="mi">30</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+<span class="mf">16.0</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="data-types">Data Types</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Integers</td>
+      <td><code class="language-plaintext highlighter-rouge">-2, -1, 0, 1, 2, 3, 4, 5</code></td>
+    </tr>
+    <tr>
+      <td>Floating-point numbers</td>
+      <td><code class="language-plaintext highlighter-rouge">-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25</code></td>
+    </tr>
+    <tr>
+      <td>Strings</td>
+      <td><code class="language-plaintext highlighter-rouge">'a', 'aa', 'aaa', 'Hello!', '11 cats'</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="string-concatenation-and-replication">String Concatenation and Replication</h3>
+
+<p>String concatenation:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'Alice'</span> <span class="o">+</span> <span class="s">'Bob'</span>
+<span class="s">'AliceBob'</span>
+</code></pre></div></div>
+
+<p>Note: Avoid <code class="language-plaintext highlighter-rouge">+</code> operator for string concatenation. Prefer <a href="#formatted-string-literals-or-f-strings-python-36">fStrings</a> except in some instances.</p>
+
+<p>String Replication:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'Alice'</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="s">'AliceAliceAliceAliceAlice'</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="variables">Variables</h3>
+
+<p>You can name a variable anything as long as it obeys the following rules:</p>
+
+<ol>
+  <li>It can be only one word.</li>
+  <li>It can use only letters, numbers, and the underscore (<code class="language-plaintext highlighter-rouge">_</code>) character.</li>
+  <li>It can’t begin with a number.</li>
+  <li>Variable name starting with an underscore (<code class="language-plaintext highlighter-rouge">_</code>) are considered as “unuseful`.</li>
+</ol>
+
+<p>Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="s">'Hello'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">_spam</span> <span class="o">=</span> <span class="s">'Hello'</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">_spam</code> should not be used again in the code.</p>
+<h3 id="camelcase">camelCase</h3>
+<p>Is used to join multiple words together without spaces or _ and make it readable
+Example:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">firstName</span> <span class="o">=</span> <span class="s">'John'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lastName</span> <span class="o">=</span> <span class="s">'Smith'</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="comments">Comments</h3>
+
+<p>Inline comment:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># This is a comment
+</span></code></pre></div></div>
+
+<p>Multiline comment:</p>
+
+<pre><code class="language-Python"># This is a
+# multiline comment
+</code></pre>
+
+<p>Code with a comment:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># initialization
+</span></code></pre></div></div>
+
+<p>Please note the two spaces in front of the comment.</p>
+
+<p>Docstring:
+Using 3 quotation marks you can define a multiple line comment or Docstring
+Start and end the docstring with 3 quotation marks of the same type</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="s">"""
+This is a function docstring
+With multiple
+lines
+"""</span>
+<span class="s">''' you can also
+    put your quotation
+    marks at the start and end of a line '''</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-print-function">The print() Function</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">'Hello world!'</span><span class="p">)</span>
+<span class="n">Hello</span> <span class="n">world</span><span class="err">!</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Hello world! </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="n">Hello</span> <span class="n">world</span><span class="err">!</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-input-function">The input() Function</h3>
+
+<p>Example Code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">input</span><span class="p">(</span><span class="s">'What is your name?'</span><span class="p">)</span>   <span class="c1"># ask for their name
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'It is good to meet you, </span><span class="si">{</span><span class="n">myName</span><span class="si">}</span><span class="s">)
+What is your name?
+Al
+It is good to meet you, Al
+</span></code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-len-function">The len() Function</h3>
+
+<p>Evaluates to the integer value of the number of characters in a string:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+<span class="mi">5</span>
+</code></pre></div></div>
+
+<p>Note: test of emptiness of strings, lists, dictionary, etc, should <strong>not</strong> use len, but prefer direct
+boolean evaluation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">a</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span><span class="p">(</span><span class="s">"the list is not empty!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-str-int-and-float-functions">The str(), int(), and float() Functions</h3>
+
+<p>Integer to String or Float:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span>
+<span class="s">'29'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">'I am '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span> <span class="o">+</span><span class="s">'  years old.'</span><span class="p">)</span>
+<span class="n">I</span> <span class="n">am</span> <span class="mi">29</span> <span class="n">years</span> <span class="n">old</span><span class="p">.</span>
+</code></pre></div></div>
+<p>You can also use <a href="#formatted-string-literals-or-f-strings-python-36">fstrings</a> to do this without the str command</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="o">-</span><span class="mf">3.14</span><span class="p">)</span>
+<span class="s">'-3.14'</span>
+</code></pre></div></div>
+
+<p>Float to Integer:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="mf">7.7</span><span class="p">)</span>
+<span class="mi">7</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="mf">7.7</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">8</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h2 id="flow-control">Flow Control</h2>
+
+<h3 id="comparison-operators">Comparison Operators</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">==</code></td>
+      <td>Equal to</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td>Not equal to</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>Less than</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>Greater Than</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;=</code></td>
+      <td>Less than or Equal to</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;=</code></td>
+      <td>Greater than or Equal to</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These operators evaluate to True or False depending on the values you give them.</p>
+
+<p>Examples:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">42</span> <span class="o">==</span> <span class="mi">42</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">40</span> <span class="o">==</span> <span class="mi">42</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'hello'</span> <span class="o">==</span> <span class="s">'hello'</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'hello'</span> <span class="o">==</span> <span class="s">'Hello'</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'dog'</span> <span class="o">!=</span> <span class="s">'cat'</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">42</span> <span class="o">==</span> <span class="mf">42.0</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">42</span> <span class="o">==</span> <span class="s">'42'</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<h3 id="boolean-operators">Boolean Operators</h3>
+
+<p>There are three Boolean operators: and, or, and not.</p>
+
+<p>The <em>and</em> Operator’s <em>Truth</em> Table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Evaluates to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">True and True</code></td>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">True and False</code></td>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">False and True</code></td>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">False and False</code></td>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <em>or</em> Operator’s <em>Truth</em> Table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Evaluates to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">True or True</code></td>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">True or False</code></td>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">False or True</code></td>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">False or False</code></td>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <em>not</em> Operator’s <em>Truth</em> Table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Evaluates to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">not True</code></td>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">not False</code></td>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="mixing-boolean-and-comparison-operators">Mixing Boolean and Comparison Operators</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">9</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<p>You can also use multiple Boolean operators in an expression, along with the comparison operators:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="ow">not</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+<h3 id="indentation-and-code-blocks">Indentation and Code Blocks</h3>
+
+<p>When using the python keywords <a href="#if-statements">if</a>, <a href="#else-statements">else</a> <a href="#elif-statements">elif</a>, <a href="#for-loops-and-the-range-function">for</a>, <a href="#while-loop-statements">while</a>, <a href="#functions">def</a>, and you need to end the line with a :
+You then need to indent the lines of code you want to belong to that statement using the tab key or multiple spaces (tab is prefered)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">this</span> <span class="o">==</span> <span class="n">that</span><span class="p">:</span>
+  <span class="n">this</span> <span class="n">line</span> <span class="n">belongs</span> <span class="n">to</span> <span class="n">the</span> <span class="k">if</span> <span class="n">statement</span> <span class="p">(</span><span class="n">line</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="n">so</span> <span class="n">does</span> <span class="n">this</span> <span class="n">line</span> <span class="p">(</span><span class="n">line</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">this</span> <span class="n">line</span> <span class="n">does</span> <span class="ow">not</span> <span class="p">(</span><span class="n">line</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>What this means as we will see in the next section if this equals that line 1 and line 2 will run
+Line 3 will run regardless if this equals that</p>
+
+<p>Any time you see a : followed by indented lines it means anything that is indented belongs to the statement with the :</p>
+
+<h3 id="if-statements">if Statements</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s">'Alice'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hi, Alice.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="else-statements">else Statements</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="s">'Bob'</span>
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s">'Alice'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hi, Alice.'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hello, stranger.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="elif-statements">elif Statements</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="s">'Bob'</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s">'Alice'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hi, Alice.'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'You are not Alice, kiddo.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="s">'Bob'</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s">'Alice'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hi, Alice.'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'You are not Alice, kiddo.'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'You are neither Alice nor a little kid.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="while-loop-statements">while Loop Statements</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">spam</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">spam</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hello, world.'</span><span class="p">)</span>
+    <span class="n">spam</span> <span class="o">=</span> <span class="n">spam</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="break-statements">break Statements</h3>
+
+<p>If the execution reaches a break statement, it immediately exits the while loop’s clause:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Please type your name.'</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s">'your name'</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Thank you!'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="continue-statements">continue Statements</h3>
+
+<p>When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Who are you?'</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">!=</span> <span class="s">'Joe'</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hello, Joe. What is the password? (It is a fish.)'</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="s">'swordfish'</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Access granted.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="for-loops-and-the-range-function">for Loops and the range() Function</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">'My name is'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Jimmy Five Times (</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s">)'</span><span class="p">)</span>
+<span class="n">My</span> <span class="n">name</span> <span class="ow">is</span>
+<span class="n">Jimmy</span> <span class="n">Five</span> <span class="n">Times</span> <span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Jimmy</span> <span class="n">Five</span> <span class="n">Times</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Jimmy</span> <span class="n">Five</span> <span class="n">Times</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Jimmy</span> <span class="n">Five</span> <span class="n">Times</span> <span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">Jimmy</span> <span class="n">Five</span> <span class="n">Times</span> <span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The <em>range()</em> function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="mi">0</span>
+<span class="mi">2</span>
+<span class="mi">4</span>
+<span class="mi">6</span>
+<span class="mi">8</span>
+</code></pre></div></div>
+
+<p>You can even use a negative number for the step argument to make the for loop count down instead of up.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="mi">5</span>
+<span class="mi">4</span>
+<span class="mi">3</span>
+<span class="mi">2</span>
+<span class="mi">1</span>
+<span class="mi">0</span>
+</code></pre></div></div>
+
+<h3 id="for-else-statement">For else statement</h3>
+
+<p>This allows to specify a statement to execute in case of the full loop has been executed. Only
+useful when a <code class="language-plaintext highlighter-rouge">break</code> condition can occur in the loop:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
+<span class="o">&gt;&gt;&gt;</span>    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>        <span class="k">break</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">else</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>    <span class="k">print</span><span class="p">(</span><span class="s">"only executed when no item of the list is equal to 3"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="importing-modules">Importing Modules</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span><span class="p">,</span> <span class="n">sys</span><span class="p">,</span> <span class="n">os</span><span class="p">,</span> <span class="n">math</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="ending-a-program-early-with-sysexit">Ending a Program Early with sys.exit()</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Type exit to exit.'</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="s">'exit'</span><span class="p">:</span>
+        <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'You typed </span><span class="si">{</span><span class="n">response</span><span class="si">}</span><span class="s">.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h2 id="functions">Functions</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">hello</span><span class="p">(</span><span class="s">'Alice'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">hello</span><span class="p">(</span><span class="s">'Bob'</span><span class="p">)</span>
+<span class="n">Hello</span> <span class="n">Alice</span>
+<span class="n">Hello</span> <span class="n">Bob</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="return-values-and-return-statements">Return Values and return Statements</h3>
+
+<p>When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:</p>
+
+<ul>
+  <li>
+    <p>The return keyword.</p>
+  </li>
+  <li>
+    <p>The value or expression that the function should return.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">def</span> <span class="nf">getAnswer</span><span class="p">(</span><span class="n">answerNumber</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'It is certain'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'It is decidedly so'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Yes'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Reply hazy try again'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Ask again later'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Concentrate and ask again'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'My reply is no'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Outlook not so good'</span>
+    <span class="k">elif</span> <span class="n">answerNumber</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">'Very doubtful'</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="n">fortune</span> <span class="o">=</span> <span class="n">getAnswer</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">fortune</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="local-and-global-scope">Local and Global Scope</h3>
+
+<ul>
+  <li>
+    <p>Code in the global scope cannot use any local variables.</p>
+  </li>
+  <li>
+    <p>However, a local scope can access global variables.</p>
+  </li>
+  <li>
+    <p>Code in a function’s local scope cannot use variables in any other local scope.</p>
+  </li>
+  <li>
+    <p>You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.</p>
+  </li>
+</ul>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-global-statement">The global Statement</h3>
+
+<p>If you need to modify a global variable from within a function, use the global statement:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">global</span> <span class="n">eggs</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="n">eggs</span> <span class="o">=</span> <span class="s">'spam'</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">eggs</span> <span class="o">=</span> <span class="s">'global'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>
+<span class="n">spam</span>
+</code></pre></div></div>
+
+<p>There are four rules to tell whether a variable is in a local scope or global scope:</p>
+
+<ol>
+  <li>
+    <p>If a variable is being used in the global scope (that is, outside of all functions), then it is always a global variable.</p>
+  </li>
+  <li>
+    <p>If there is a global statement for that variable in a function, it is a global variable.</p>
+  </li>
+  <li>
+    <p>Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.</p>
+  </li>
+  <li>
+    <p>But if the variable is not used in an assignment statement, it is a global variable.</p>
+  </li>
+</ol>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h2 id="exception-handling">Exception Handling</h2>
+
+<h3 id="basic-exception-handling">Basic exception handling</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">spam</span><span class="p">(</span><span class="n">divideBy</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">try</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">return</span> <span class="mi">42</span> <span class="o">/</span> <span class="n">divideBy</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">except</span> <span class="nb">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Error: Invalid argument: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="mf">21.0</span>
+<span class="mf">3.5</span>
+<span class="n">Error</span><span class="p">:</span> <span class="n">Invalid</span> <span class="n">argument</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span>
+<span class="bp">None</span>
+<span class="mf">42.0</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="final-code-in-exception-handling">Final code in exception handling</h3>
+
+<p>Code inside the <code class="language-plaintext highlighter-rouge">finally</code> section is always executed, no matter if an exception has been raised or
+not, and even if an exception is not caught.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">spam</span><span class="p">(</span><span class="n">divideBy</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">try</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">return</span> <span class="mi">42</span> <span class="o">/</span> <span class="n">divideBy</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">except</span> <span class="nb">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Error: Invalid argument: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">finally</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">print</span><span class="p">(</span><span class="s">"-- division finished --"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="o">--</span> <span class="n">division</span> <span class="n">finished</span> <span class="o">--</span>
+<span class="mf">21.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
+<span class="o">--</span> <span class="n">division</span> <span class="n">finished</span> <span class="o">--</span>
+<span class="mf">3.5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">Error</span><span class="p">:</span> <span class="n">Invalid</span> <span class="n">Argument</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span>
+<span class="o">--</span> <span class="n">division</span> <span class="n">finished</span> <span class="o">--</span>
+<span class="bp">None</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">spam</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="o">--</span> <span class="n">division</span> <span class="n">finished</span> <span class="o">--</span>
+<span class="mf">42.0</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h2 id="lists">Lists</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="getting-individual-values-in-a-list-with-indexes">Getting Individual Values in a List with Indexes</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="s">'cat'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'bat'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="s">'rat'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="s">'elephant'</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="negative-indexes">Negative Indexes</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'elephant'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="s">'bat'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s">'The </span><span class="si">{</span><span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s"> is afraid of the </span><span class="si">{</span><span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s">.'</span><span class="p">)</span>
+<span class="s">'The elephant is afraid of the bat.'</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="getting-sublists-with-slices">Getting Sublists with Slices</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="p">[</span><span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Slicing the complete list will perform a copy:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam2</span> <span class="o">=</span> <span class="n">spam</span><span class="p">[:]</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'dog'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam2</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="getting-a-lists-length-with-len">Getting a List’s Length with len()</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'moose'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">spam</span><span class="p">)</span>
+<span class="mi">3</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="changing-values-in-a-list-with-indexes">Changing Values in a List with Indexes</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">'aardvark'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'aardvark'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">spam</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'aardvark'</span><span class="p">,</span> <span class="s">'aardvark'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12345</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'aardvark'</span><span class="p">,</span> <span class="s">'aardvark'</span><span class="p">,</span> <span class="mi">12345</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="using-for-loops-with-lists">Using for Loops with Lists</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">supplies</span> <span class="o">=</span> <span class="p">[</span><span class="s">'pens'</span><span class="p">,</span> <span class="s">'staplers'</span><span class="p">,</span> <span class="s">'flame-throwers'</span><span class="p">,</span> <span class="s">'binders'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">supply</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">supplies</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Index </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s"> in supplies is: </span><span class="si">{</span><span class="n">supply</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="n">Index</span> <span class="mi">0</span> <span class="ow">in</span> <span class="n">supplies</span> <span class="ow">is</span><span class="p">:</span> <span class="n">pens</span>
+<span class="n">Index</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">supplies</span> <span class="ow">is</span><span class="p">:</span> <span class="n">staplers</span>
+<span class="n">Index</span> <span class="mi">2</span> <span class="ow">in</span> <span class="n">supplies</span> <span class="ow">is</span><span class="p">:</span> <span class="n">flame</span><span class="o">-</span><span class="n">throwers</span>
+<span class="n">Index</span> <span class="mi">3</span> <span class="ow">in</span> <span class="n">supplies</span> <span class="ow">is</span><span class="p">:</span> <span class="n">binders</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-in-and-not-in-operators">The in and not in Operators</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'howdy'</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'hello'</span><span class="p">,</span> <span class="s">'hi'</span><span class="p">,</span> <span class="s">'howdy'</span><span class="p">,</span> <span class="s">'heyas'</span><span class="p">]</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'hello'</span><span class="p">,</span> <span class="s">'hi'</span><span class="p">,</span> <span class="s">'howdy'</span><span class="p">,</span> <span class="s">'heyas'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'cat'</span> <span class="ow">in</span> <span class="n">spam</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'howdy'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spam</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'cat'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">spam</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="augmented-assignment-operators">Augmented Assignment Operators</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spam += 1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">spam = spam + 1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spam -= 1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">spam = spam - 1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spam *= 1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">spam = spam * 1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spam /= 1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">spam = spam / 1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spam %= 1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">spam = spam % 1</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Examples:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">+=</span> <span class="s">' world!'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="s">'Hello world!'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bacon</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Zophie'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bacon</span> <span class="o">*=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bacon</span>
+<span class="p">[</span><span class="s">'Zophie'</span><span class="p">,</span> <span class="s">'Zophie'</span><span class="p">,</span> <span class="s">'Zophie'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="finding-a-value-in-a-list-with-the-index-method">Finding a Value in a List with the index() Method</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Zophie'</span><span class="p">,</span> <span class="s">'Pooka'</span><span class="p">,</span> <span class="s">'Fat-tail'</span><span class="p">,</span> <span class="s">'Pooka'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'Pooka'</span><span class="p">)</span>
+<span class="mi">1</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="adding-values-to-lists-with-the-append-and-insert-methods">Adding Values to Lists with the append() and insert() Methods</h3>
+
+<p><strong>append()</strong>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'moose'</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'moose'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><strong>insert()</strong>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'chicken'</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'chicken'</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="removing-values-from-lists-with-remove">Removing Values from Lists with remove()</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'bat'</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>If the value appears multiple times in the list, only the first instance of the value will be removed.</p>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="removing-values-from-lists-with-pop">Removing Values from Lists with pop()</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">,</span> <span class="s">'elephant'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="s">'elephant'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'cat'</span><span class="p">,</span> <span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="s">'cat'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'bat'</span><span class="p">,</span> <span class="s">'rat'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="sorting-the-values-in-a-list-with-the-sort-method">Sorting the Values in a List with the sort() Method</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'ants'</span><span class="p">,</span> <span class="s">'cats'</span><span class="p">,</span> <span class="s">'dogs'</span><span class="p">,</span> <span class="s">'badgers'</span><span class="p">,</span> <span class="s">'elephants'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'ants'</span><span class="p">,</span> <span class="s">'badgers'</span><span class="p">,</span> <span class="s">'cats'</span><span class="p">,</span> <span class="s">'dogs'</span><span class="p">,</span> <span class="s">'elephants'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>You can also pass True for the reverse keyword argument to have sort() sort the values in reverse order:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'elephants'</span><span class="p">,</span> <span class="s">'dogs'</span><span class="p">,</span> <span class="s">'cats'</span><span class="p">,</span> <span class="s">'badgers'</span><span class="p">,</span> <span class="s">'ants'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort() method call:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'z'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'Z'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="p">.</span><span class="n">lower</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'z'</span><span class="p">,</span> <span class="s">'Z'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>You can use the built-in function <code class="language-plaintext highlighter-rouge">sorted</code> to return a new list:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="p">[</span><span class="s">'ants'</span><span class="p">,</span> <span class="s">'cats'</span><span class="p">,</span> <span class="s">'dogs'</span><span class="p">,</span> <span class="s">'badgers'</span><span class="p">,</span> <span class="s">'elephants'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">spam</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'ants'</span><span class="p">,</span> <span class="s">'badgers'</span><span class="p">,</span> <span class="s">'cats'</span><span class="p">,</span> <span class="s">'dogs'</span><span class="p">,</span> <span class="s">'elephants'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="multiline-strings-with-triple-quotes">Multiline Strings with Triple Quotes</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">'''Dear Alice,
+&gt;&gt;&gt;
+&gt;&gt;&gt; Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+&gt;&gt;&gt;
+&gt;&gt;&gt; Sincerely,
+&gt;&gt;&gt; Bob'''</span><span class="p">)</span>
+<span class="n">Dear</span> <span class="n">Alice</span><span class="p">,</span>
+
+<span class="n">Eve</span><span class="s">'s cat has been arrested for catnapping, cat burglary, and extortion.
+
+Sincerely,
+Bob
+</span></code></pre></div></div>
+
+<h3 id="indexing-and-slicing-strings">Indexing and Slicing Strings</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>H   e   l   l   o       w   o   r   l   d    !
+0   1   2   3   4   5   6   7   8   9   10   11
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello world!'</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="s">'H'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="s">'o'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'!'</span>
+</code></pre></div></div>
+
+<p>Slicing:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="s">'Hello'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="s">'Hello'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="s">'world!'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'world'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'Hello world'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'!dlrow olleH'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello world!'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fizz</span> <span class="o">=</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fizz</span>
+<span class="s">'Hello'</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-in-and-not-in-operators-with-list">The in and not in Operators with list</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="ow">in</span> <span class="n">a</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="ow">in</span> <span class="n">a</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="the-upper-lower-isupper-and-islower-string-methods">The upper(), lower(), isupper(), and islower() String Methods</h3>
+
+<p><code class="language-plaintext highlighter-rouge">upper()</code> and <code class="language-plaintext highlighter-rouge">lower()</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello world!'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="n">spam</span><span class="p">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="s">'HELLO WORLD!'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="n">spam</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="s">'hello world!'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">firstName</span> <span class="o">=</span> <span class="s">"john"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">firstName</span><span class="p">.</span><span class="n">capatilize</span><span class="p">()</span>
+<span class="s">'John'</span>
+</code></pre></div></div>
+
+<p>isupper() and islower():</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s">'Hello world!'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">islower</span><span class="p">()</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">.</span><span class="n">isupper</span><span class="p">()</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'HELLO'</span><span class="p">.</span><span class="n">isupper</span><span class="p">()</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'abc12345'</span><span class="p">.</span><span class="n">islower</span><span class="p">()</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'12345'</span><span class="p">.</span><span class="n">islower</span><span class="p">()</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'12345'</span><span class="p">.</span><span class="n">isupper</span><span class="p">()</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+<h3 id="formatted-string-literals-or-f-strings-python-36">Formatted String Literals or f-strings (Python 3.6+)</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s">'Elizabeth'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">'Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!'</span><span class="p">)</span>
+<span class="s">'Hello Elizabeth!
+</span></code></pre></div></div>
+
+<p>It is even possible to do inline arithmetic with it:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s">'Five plus ten is </span><span class="si">{</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="si">}</span><span class="s"> and not </span><span class="si">{</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="si">}</span><span class="s">.'</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">'Five plus ten is 15 and not 30.'</span><span class="p">)</span>
+</code></pre></div></div>
+<p><strong>fstings are one place where a space does matter you cannot put a space between the f and the quotation marks</strong></p>
+
+<p><a href="#python-cheatsheet"><em>Return to the Top</em></a></p>
+
+
+
+      </section>
+
+    </div>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
